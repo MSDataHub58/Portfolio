@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS - Personal Dashboard</title>
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="icon" type="image/JPG" href="icon.jpg">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bento-container">
+        <!-- NAVBAR -->
+        <nav class="bento-card navbar">
+            <div class="logo"><i class="fa-solid fa-code"></i> MS Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- PROJECTS DESCRIPTION -->
+        <div class="bento-card projects-desc">
+            <h3><i class="fa-solid fa-folder-open"></i> Projects Overview</h3>
+            <p>Building responsive web sites, and data analysis reports and dashboards.</p>
+            <div class="projects-links">
+                <section class="project-section">
+                <h3><i class="fa-solid fa-folder-tree"></i> Projects Repo</h3>
+                <br>
+                <h4>Blog</h4>
+                <a target="_blank" href="https://github.com/MSDataHub58/WebDevelopment5"> My Portfolio Site</a>
+                <h4>Analysis Projects</h4>
+                <a target="_blank" href="https://github.com/MSDataHub58/sales-data-analysis">Analysis Projects</a>
+                <a target="_blank" href="https://github.com/MSDataHub58/DecodeLabs-Internships">Sales Analysis</a>
+            </div>
+            <div class="tech-tags">
+                <span>HTML/CSS</span>
+                <span>Data Analytics</span>
+            </div>
+        </div>
+
+        <!-- MAIN HIGHLIGHT -->
+        <div class="bento-card main-hero">
+            <div class="hero-content">
+                <span class="badge">🚀 Main Showcase</span>
+                <h2>Interactive Project / Live Coding Stats</h2>
+                <p>Welcome to my workspace! Check out my live builds, coding activity, and active experiments.</p>
+                <a href="https://github.com/MSDataHub58" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none; text-align: center;">View Featured Project</a>
+                <a href="https://hackati.me/SHABI" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none; text-align: center;">Live Coding Stats</a>
+            </div>
+            <!-- THEME SWITCHER BAR -->
+            <div class="theme-switcher-bar">
+    
+                <span class="dot dot-mint active" onclick="changeTheme('mint')" style="background-color: #00f5d4;"></span>
+                <span class="dot dot-lavender" onclick="changeTheme('lavender')" style="background-color: #bd93f9;"></span>
+                <span class="dot dot-coral" onclick="changeTheme('coral')" style="background-color: #ff007f;"></span>
+                <span class="dot dot-emerald" onclick="changeTheme('emerald')" style="background-color: #10b981;"></span>
+            </div>
+        </div>
+        <!-- MUSIC SECTION -->
+        <div class="bento-card music-section">
+            <div class="music-info">
+                <i id="disc-icon" class="fa-solid fa-compact-disc"></i>
+                <div>
+                    <h4>Coding Beats</h4>
+                    <p>Lo-Fi Chill Radio</p>
+                </div>
+            </div>
+            <!-- Audio -->
+            <audio id="bg-audio" loop>
+                <source src="https://stream.zeno.fm/f3wvbbqmdg8uv" type="audio/mp3">
+                <source src="Download.mp3" type="audio/mp3">
+            </audio>
+            <div class="music-controls">
+                <i class="fa-solid fa-backward" id="prev-btn"></i>
+                <i class="fa-solid fa-play" id="play-btn"></i>
+                <i class="fa-solid fa-forward" id="next-btn"></i>
+            </div>
+        </div>
+
+        <!-- PROFILES SECTION -->
+        <div class="bento-card profiles-section">
+            <h3><i class="fa-solid fa-user"></i> Connect With Me</h3>
+            <div class="profile-links">
+                <a href="https://github.com/MSDataHub58" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/m-saad-0208ms58/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:ahsanabb32@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://www.fiverr.com/msdatahub" target="_blank"><i class="fa-solid fa-briefcase"></i> Upwork / Fiverr</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
